@@ -31,7 +31,7 @@ def main():
   
   st.title("Neural Style Transfer App")
   st.text("Built with Style_Transfer-API and Streamlit")
-  st.markdown("### [![Open Source Love svg1](https://aleen42.github.io/badges/src/github.svg)](https://github.com/Hardly-Human/Image-Colorization-App)\
+  st.markdown("### [![Open Source Love svg1](https://aleen42.github.io/badges/src/github.svg)](https://github.com/Hardly-Human/Neural-Style-Tranfer-App)\
   `            `[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://lbesson.mit-license.org/) \
   `            `[Get Style Images](https://unsplash.com/s/photos/paint-texture)")
 
