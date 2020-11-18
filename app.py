@@ -1,6 +1,8 @@
 import streamlit as st
 from PIL import Image
-
+import requests
+import base64
+import os
 
 ################################################################################
 # main()
@@ -43,7 +45,33 @@ def main():
     style_path = "style_image.jpg"
     col2.image(image2, use_column_width=True)
 
+  if st.button("Transfer Style"):
+    if image_file is not None:
+      st.warning("Please Wait⌛...")
+      r = requests.post(
+      "https://api.deepai.org/api/fast-style-transfer",
+      files={
+          'content': open('saved_image.jpg', 'rb'),
+          'style': open('style_image.jpg', 'rb'),
+      },
+      headers={'api-key': 'aa48ee59-f392-4783-b1ac-ab410534ca61'}
+    )
 
+      color_image_url = r.json()["output_url"]
+
+      img_data = requests.get(color_image_url).content
+      with open('color_image.jpg', 'wb') as handler:
+        handler.write(img_data)
+      st.success("Style Transfer Succesfull..🤟")
+      color_image = Image.open('color_image.jpg')
+
+      st.subheader("Processed Image")
+      st.image(color_image)
+
+      st.markdown(get_binary_file_downloader_html('color_image.jpg', 'Picture'), unsafe_allow_html=True)
+
+    else:
+      st.error("Please Upload Images!!!")
 
 
 if __name__== "__main__":
