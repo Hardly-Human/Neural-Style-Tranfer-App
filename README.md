@@ -1,4 +1,4 @@
-# Neural Style Tranfer App
+# Neural Style Transfer App
 A Streamlit web application that uses Style_Transfer API to implement Image Colorization.
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
@@ -7,8 +7,8 @@ A Streamlit web application that uses Style_Transfer API to implement Image Colo
 
 
 ### This app has been deployed on Heroku.🥳
- **🟢Live at** [![Heroku App](https://raw.githubusercontent.com/gregsadetsky/heroku-ci-badge/master/badges/succeeded.svg)](https://neural-style-transfer-app.herokuapp.com/)
- [![uptime: 100%](https://camo.githubusercontent.com/b3fc74878a0d5fcca5a78b288aa4b489f65fd7eb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f757074696d652d3130302532352d627269676874677265656e)](https://neural-style-transfer-app.herokuapp.com/)
+ **🟢Live at** [![Heroku App](https://raw.githubusercontent.com/gregsadetsky/heroku-ci-badge/master/badges/succeeded.svg)](https://style-tranfer-app.herokuapp.com/)
+ [![uptime: 100%](https://camo.githubusercontent.com/b3fc74878a0d5fcca5a78b288aa4b489f65fd7eb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f757074696d652d3130302532352d627269676874677265656e)](https://style-tranfer-app.herokuapp.com/)
 [![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/Hardly-Human)
 
 ### Demo Images
