@@ -72,7 +72,7 @@ def main():
           'content': open('saved_image.jpg', 'rb'),
           'style': open('style_image.jpg', 'rb'),
       },
-      headers={'api-key': 'aa48ee59-f392-4783-b1ac-ab410534ca61'}
+      headers={'api-key': '8f0499fe-bf0f-455d-9f4b-3acb442b49c4'}
     )
 
       color_image_url = r.json()["output_url"]
